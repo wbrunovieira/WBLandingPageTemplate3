@@ -1635,4 +1635,13 @@ img {
     margin: 0 auto;
   }
 }
+
+.material-icons {
+  font-size: 24px;
+  color: #792990;
+}
+.fab {
+  font-size: 24px;
+  color: #792990;
+}
 /*# sourceMappingURL=../sourcemaps/index.css.map */

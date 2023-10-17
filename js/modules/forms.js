@@ -39,7 +39,7 @@ export function validateForm(target, fieldSelector = '.field') {
 
     let notificationText = '';
     let notification = {
-        title: "Thank you!",
+        title: "Obrigado!",
         toast: true,
         position: 'top-end',
         timer: 3000,
@@ -80,11 +80,11 @@ export function validateForm(target, fieldSelector = '.field') {
                     el.classList.remove('error');
                 })
                 if (form.dataset.type === 'newsletter') {
-                    notificationText = 'Now you\'re subscribed to our newsletter.';
+                    notificationText = 'Agora recebemos a sua mensagem.';
                 } else if (form.dataset.type === 'feedback') {
-                    notificationText = 'Your message has been sent. We\'ll reply you as soon as possible.';
+                    notificationText = 'Agora recebemos a sua mensagem.';
                 } else if (form.dataset.type === 'reply') {
-                    notificationText = 'Your comment is awaiting moderation.';
+                    notificationText = 'Agora recebemos a sua mensagem.';
                 }
                 drawNotification(notification, notificationText);
                 sendForm(form);

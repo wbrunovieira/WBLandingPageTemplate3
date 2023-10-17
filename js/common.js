@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     applyDatepicker();
     customSelect('select');
-    validateForm('.footer_newsletter-form');
+    // validateForm('.footer_newsletter-form');
     validateForm('.post_main-reply_form');
     validateForm('.contacts_main-form');
     setCurrentYear();
