@@ -390,6 +390,11 @@ img {
   line-height: 1;
 }
 
+.img-responsivo {
+  width: 50%;
+  height: 10px;
+}
+
 @media screen and (min-width: 767.98px) {
   h1 {
     font-size: 50px;
@@ -866,6 +871,10 @@ img {
 @media screen and (min-width: 767.98px) {
   .hero_content {
     max-width: 570px;
+  }
+
+  .swiper-slide {
+    width: 10%;
   }
 }
 
@@ -1583,7 +1592,7 @@ img {
   text-transform: uppercase;
 }
 
-.promo_popup-close {
+/* .promo_popup-close {
   width: 20px;
   height: 20px;
   margin-top: -15px;
@@ -1592,6 +1601,38 @@ img {
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
+} */
+
+.promo_popup-close {
+  /* width: 20px;
+  height: 20px;
+  margin-top: -15px;
+  margin-right: -15px;
+  font-size: 20px; */
+  -webkit-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  position: relative; /* Adicione isso para posicionar o "X" corretamente */
+  background: none; /* Remove o fundo */
+  border: none; /* Remove as bordas */
+  text-indent: -9999px;
+}
+
+/* Adicione estas regras */
+.promo_popup-close::before,
+.promo_popup-close::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: currentColor;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.promo_popup-close::after {
+  transform: translateX(-50%) rotate(-45deg);
 }
 
 .promo_popup-close:focus,
@@ -1643,5 +1684,9 @@ img {
 .fab {
   font-size: 24px;
   color: #792990;
+}
+
+.img-responsivo {
+  width: 30px;
 }
 /*# sourceMappingURL=../sourcemaps/index.css.map */
