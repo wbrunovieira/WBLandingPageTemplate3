@@ -796,7 +796,7 @@ img {
 .hero {
   height: 100vh;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: ;
 
   -webkit-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
@@ -869,12 +869,13 @@ img {
 }
 
 @media screen and (min-width: 767.98px) {
-  .hero_content {
-    max-width: 570px;
+  .hero {
+    background-size: 100% 100%;
   }
-
-  .swiper-slide {
-    width: 10%;
+}
+@media screen and (min-width: 500px) {
+  .hero {
+    background-size: 100% 100%;
   }
 }
 
@@ -1688,5 +1689,31 @@ img {
 
 .img-responsivo {
   width: 30px;
+}
+
+.hero_slider-controls {
+  display: flex !important;
+}
+
+@media (min-width: 409px) {
+  .hero_slider-controls {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 20px;
+    z-index: 999;
+  }
+
+  .hero_slider-control {
+    color: #fff;
+    -webkit-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
+    font-size: 20px;
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=../sourcemaps/index.css.map */
