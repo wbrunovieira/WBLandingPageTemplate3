@@ -796,7 +796,7 @@ img {
 .hero {
   height: 100vh;
   background-repeat: no-repeat;
-  background-size: ;
+  background-size: 100%;
 
   -webkit-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
@@ -875,7 +875,7 @@ img {
 }
 @media screen and (min-width: 500px) {
   .hero {
-    background-size: 100% 100%;
+    background-size: 100%;
   }
 }
 
@@ -888,7 +888,7 @@ img {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     padding: 0 20px;
-    z-index: 999;
+    z-index: 3;
   }
 
   .hero_slider-control {
@@ -1695,25 +1695,17 @@ img {
   display: flex !important;
 }
 
-@media (min-width: 409px) {
-  .hero_slider-controls {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 0 20px;
-    z-index: 999;
+@media (max-width: 920px) {
+  .hero {
+    height: auto !important;
+  }
+  .hero_overlay {
+    height: 20vh; /* ou qualquer valor que funcione para você */
   }
 
-  .hero_slider-control {
-    color: #fff;
-    -webkit-transition: color 0.5s ease-in-out;
-    -o-transition: color 0.5s ease-in-out;
-    transition: color 0.5s ease-in-out;
-    font-size: 20px;
-    cursor: pointer;
+  .hero_content-header {
+    font-size: 24px;
   }
 }
+
 /*# sourceMappingURL=../sourcemaps/index.css.map */
